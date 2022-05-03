@@ -6,49 +6,85 @@ const windowHeight = Dimensions.get('window').height;
 export default function App() {
   return (
     <SafeAreaView style={styles.firstView}>
-      <SafeAreaView style={styles.categories}>
-        <Text style={styles.category}>
-          Categories
-        </Text>
-      </SafeAreaView>
-      {/*SECTION HEAD*/}
-      <View style={styles.sectionHead}>
-      <Text style={styles.sectionNameHead}>Select from Menu</Text>
-      <Text style={[styles.sectionNameFilter,{borderWidth: 1, borderColor: '#fff'}]}><AntDesign name="bars" size={15} color="#fff" />Filters</Text>
-      </View>
-      {/*SECTION*/}
-      <Text>Popular</Text>
-      <View style={styles.section}>
-      <Text style={styles.sectionName}>Cakes</Text>
-      <Text style={styles.seeAll}>See All</Text>
-      </View>
-      <ScrollView horizontal={true}>
-            <SafeAreaView style={styles.image}>
-              <Image
-                style={styles.logo}
-                source={{
-                  uri: 'https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg',
-                }}
-              />
-            </SafeAreaView>
+      <ScrollView>
+        <SafeAreaView style={styles.categories}>
+          <Text style={styles.category}>
+            Categories
+          </Text>
+        </SafeAreaView>
+        {/*SECTION HEAD*/}
+        <View style={styles.sectionHead}>
+        <Text style={styles.sectionNameHead}>Select from Menu</Text>
+        <Text style={[styles.sectionNameFilter,{borderWidth: 1, borderColor: '#fff'}]}><AntDesign name="bars" size={15} color="#fff" />Filters</Text>
+        </View>
+        {/*SECTION 1*/}
+        <Text>Popular</Text>
+        <View style={styles.section}>
+        <Text style={styles.sectionName}>Cakes</Text>
+        <Text style={styles.seeAll}>See All</Text>
+        </View>
+        <ScrollView horizontal={true}>
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg',
+                  }}
+                />
+              </SafeAreaView>
 
-            <SafeAreaView style={styles.image}>
-              <Image
-                style={styles.logo}
-                source={{
-                  uri: 'https://www.hersheyland.com/content/dam/hersheyland/en-us/blogs/blog-images/peanut-butter-drip-cake.jpg',
-                }}
-              />
-            </SafeAreaView>
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://www.hersheyland.com/content/dam/hersheyland/en-us/blogs/blog-images/peanut-butter-drip-cake.jpg',
+                  }}
+                />
+              </SafeAreaView>
 
-            <SafeAreaView style={styles.image}>
-              <Image
-                style={styles.logo}
-                source={{
-                  uri: 'https://www.thespruceeats.com/thmb/vUa84bcy7sXFZczahCuWQC9h8PY=/2667x2000/smart/filters:no_upscale()/AngelFoodCakeHERO-35c72869f62443638bd2b033d6d381bd.jpg',
-                }}
-              />
-            </SafeAreaView>
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://www.thespruceeats.com/thmb/vUa84bcy7sXFZczahCuWQC9h8PY=/2667x2000/smart/filters:no_upscale()/AngelFoodCakeHERO-35c72869f62443638bd2b033d6d381bd.jpg',
+                  }}
+                />
+              </SafeAreaView>
+        </ScrollView>
+        {/* SECTION 2 */}
+        <Text>Popular</Text>
+        <View style={styles.section}>
+        <Text style={styles.sectionName}>Cakes</Text>
+        <Text style={styles.seeAll}>See All</Text>
+        </View>
+        <ScrollView horizontal={true}>
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://preppykitchen.com/wp-content/uploads/2019/06/Chocolate-cake-recipe-1200a.jpg',
+                  }}
+                />
+              </SafeAreaView>
+
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://www.hersheyland.com/content/dam/hersheyland/en-us/blogs/blog-images/peanut-butter-drip-cake.jpg',
+                  }}
+                />
+              </SafeAreaView>
+
+              <SafeAreaView style={styles.image}>
+                <Image
+                  style={styles.logo}
+                  source={{
+                    uri: 'https://www.thespruceeats.com/thmb/vUa84bcy7sXFZczahCuWQC9h8PY=/2667x2000/smart/filters:no_upscale()/AngelFoodCakeHERO-35c72869f62443638bd2b033d6d381bd.jpg',
+                  }}
+                />
+              </SafeAreaView>
+        </ScrollView>
       </ScrollView>
     </SafeAreaView>
   );
@@ -56,7 +92,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   firstView: {
-    flex:0.6,
+    flex:1,
     padding: 25,
     backgroundColor: '#979797',
   },
